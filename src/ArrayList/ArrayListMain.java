@@ -13,7 +13,26 @@ public class ArrayListMain {
         arraylist.add("java");
         arraylist.add("c++");
 
-        System.out.println(arraylist.get(0));
-        System.out.println(arraylist.get(2));
+        // Eleman Erişme
+        //System.out.println(arraylist.get(0));
+        //System.out.println(arraylist.get(2));
+        //System.out.println(arraylist.get(4)); //hata verir
+
+        System.out.println("************* Normal For Döngüsü **************");
+
+        for (int i = 0; i<arraylist.size(); i++){
+            System.out.println(arraylist.get(i));
+        }
+
+        // Eleman Silme
+        arraylist.remove(0);
+
+        System.out.println("************ For Each Döngüsü ***************");
+
+        for ( String s: arraylist ) {
+            System.out.println(s);
+        }
+
+
     }
 }
