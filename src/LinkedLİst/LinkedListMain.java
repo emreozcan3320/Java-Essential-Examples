@@ -25,7 +25,8 @@ public class LinkedListMain {
 
         for (int i = 0 ; i< 100000 ; i++) {
 
-            list.add(0,i);
+            //list.add(i); // listenin sonuna eklendiğinde Arraylist daha hızlı
+            list.add(0,i); // ama listede kaydırma gerektiren herhangi bir yere eklendiğinde linked list daha hızlı
 
         }
         bitis = System.currentTimeMillis();
